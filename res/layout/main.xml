@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/lettersView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:lines="@integer/letter_view_max_lines"
+        android:maxLines="@integer/letter_view_max_lines"
+        android:text="@string/letters"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/attemptsBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lettersView"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:indeterminate="false" />
+
+    <TableLayout
+        android:id="@+id/keyboardTable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp" >
+    </TableLayout>
+
+</RelativeLayout>
